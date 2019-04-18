@@ -1,0 +1,35 @@
+/*Inicialice una variable de tipo float y formatee la salida para que el valor de la variable se visualice.
+En su formato original.
+Indicando su signo + o -
+En notacion cientifica (mantisa/Exponente)
+Como float utilizando 1 caracter para la parte decimal.
+solo la parte entera.
+*/
+
+#include<stdio.h>
+
+int main()
+{
+float b = 13500.570413;
+
+printf("Variable b(float): \n\n");
+
+printf("\tComo float: %f\n",b);
+
+printf("\tMostrando el signo: %+f\n",b);
+
+printf("\tCon solo 1(un) caracter para la parte decimal: %.1f\n",b);
+
+printf("\tComo flotante (double): %f\n",(double)b);
+
+return 0;
+
+/* Salida:
+Como float: 13500.570413
+Mostrando el signo: +13500.570313
+Con solo 1(un) caracter para la parte decimal: 13500.6
+Como entero: 13500
+Como flotante (double): 13500.570313
+*/
+
+}

@@ -1,0 +1,27 @@
+ /*Visualizar en pantalla el valor de la variable en su formato original, 
+ y ademas representarlas en al menos otros dos formatos mas.*/
+ 
+ #include<stdio.h>
+ 
+ int main()
+ {
+ char a ='a';
+ 
+ printf("Variable 'a' en diferentes formatos: \n\n);
+ 
+ printf("\tComo 'char': %c\n",a);
+ 
+ printf("\tComo 'entero|decimal ASCII': %d\n",a);
+ 
+ printf("\tComo 'hexadecimal': %x\n\n",a);
+ 
+ /*Salida:
+ 
+ Como  'Char': a
+ Como 'entero|decimal ASCII': 97
+ Como 'hexadecimal': 61
+ */
+ 
+ return 0;
+ 
+ }

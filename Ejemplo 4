@@ -1,0 +1,29 @@
+/*Escribir un programa que incialice las siguientes variables.*/
+
+#include<stdio.h>
+
+int main()
+{
+int a = 100;
+
+float b = 2.3;
+
+int exp1;
+
+float exp2;
+
+exp1 = a/b;
+
+exp2 = a/b;
+
+printf("El valor de la expresion 1(int) %d/%.3f es: %d\n", a,b,exp1);
+
+printf("El valor de la expresion 2(float) %d/%.3f es: %.3f\n", a,b,exp2);
+
+return 0;
+
+/*Salida:
+El valor de la expresion 1(int) 100/2.300 es: 43
+El valor de la expresion 2(float) 100/2.300 es: 43.478
+*/
+}

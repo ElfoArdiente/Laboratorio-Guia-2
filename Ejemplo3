@@ -1,0 +1,47 @@
+/*Escribir un programa que incialice lass variables con los siguientes variables y utilizando
+el operador sizeof() junto a la función printf(), imprimir por cada variable su longitud, su
+valor y su tipo de dato.*/
+
+#include<stdio.h>
+
+int main()
+{
+char a = 'Z';
+
+int b = 2147483647;
+
+short c = 32767;
+
+long d = 2147483647;
+
+float e = 3.4E+38;
+
+double f = 1.7E+308;
+
+float g = 40000;
+
+printf("La longitud de la variable a es %d byte(s), y su valor es %c y su tipo es char\n",sizeof(char),a);
+
+printf("La longitud de la variable a es %d byte(s), y su valor es %d y su tipo es int\n",sizeof(int),b);
+
+printf("La longitud de la variable a es %d byte(s), y su valor es %d y su tipo es short\n",sizeof(short),c);
+
+printf("La longitud de la variable a es %d byte(s), y su valor es %d y su tipo es long\n",sizeof(long),d);
+
+printf("La longitud de la variable a es %d byte(s), y su valor es %e y su tipo es float\n",sizeof(float),e);
+
+printf("La longitud de la variable a es %d byte(s), y su valor es %e y su tipo es double\n",sizeof(double),f);
+
+return 0;
+
+/*Salida:
+
+La longitud de la variable a es 1 byte(s), y su valor es Z y su tipo es char
+La longitud de la variable a es 4 byte(s), y su valor es 2147483647 y su tipo es int
+La longitud de la variable a es 2 byte(s), y su valor es 32767 y su tipo es short
+La longitud de la variable a es 4 byte(s), y su valor es 2147483647 y su tipo es long
+La longitud de la variable a es 4 byte(s), y su valor es 3.400000e+038 y su tipo es float
+La longitud de la variable a es 8 byte(s), y su valor es 1.700000e+308 y su tipo es double
+*/
+
+}
